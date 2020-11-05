@@ -28,6 +28,7 @@ bootRun.environment([
         "MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS": "always",
         "MANAGEMENT_HEALTH_PROBES_ENABLED": true,
         "MANAGEMENT_ENDPOINT_HEALTH_GROUP_READINESS_INCLUDE": "backingService",
+        "MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE": "info,health,palTrackerFailure",
 ])
 
 test.environment([
@@ -36,6 +37,7 @@ test.environment([
         "MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS": "always",
         "MANAGEMENT_HEALTH_PROBES_ENABLED": true,
         "MANAGEMENT_ENDPOINT_HEALTH_GROUP_READINESS_INCLUDE": "backingService",
+        "MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE": "info,health,palTrackerFailure",
 ])
 
 springBoot {
