@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: pal-tracker
 data:
-  welcome.message: "hello from review"
+  welcome.message: "hello from review with pipeline"
